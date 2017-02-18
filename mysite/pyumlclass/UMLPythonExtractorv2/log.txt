@@ -1,0 +1,13 @@
+01:13:50 Comienza la ejecucion...
+01:14:03: EXITO, clase Ataque agregada
+01:14:03: EXITO, clase Pokemon agregada
+01:14:03: EXITO, clase Atributo agregada
+01:14:03: EXITO, clase Batalha agregada
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Ataque.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Atributo.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Batalha.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/battle.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Pokemon.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/ProjetoPokemon.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Tipo.py
+01:14:03:Ejecutamos el comando ctags ProjetoPokemon/BattlePokemon/Validacao.py

@@ -1,0 +1,25 @@
+<h1> Archive projects </h1>
+<p>In this section you will see all results of several projects</p>
+
+<table style="width:80%">
+  <tr>
+    <th>Project name</th>
+    <th>UML Class</th>
+    <th>Python Class</th>
+    <th>Intersection</th>
+    <th>Without corrections</th>
+    <th>Hamming corrections</th>
+    <th>Capital letters corrections</th>
+  </tr>
+  {% for project in projects %}
+    <tr>
+      <th>{{ project.name_text }}</th>
+      <th>{{ project.uml_class }}</th>
+      <th>{{ project.python_class }}</th>
+      <th>{{ project.intersection }}</th>
+      <th>{{ project.without_corrections }}</th>
+      <th>{{ project.hamming_corrections }}</th>
+      <th>{{ project.capital_letters_corrections }}</th>
+    </tr>
+  {% endfor%}
+</table>

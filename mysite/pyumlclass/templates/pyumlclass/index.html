@@ -1,0 +1,11 @@
+<h1>PyUmlClass App</h1>
+
+<p> Insert the project link: </p>
+<form action="{% url 'pyumlclass:results' %}" method="post">
+  {% csrf_token %}
+  <input type="text" name="project_url" id="project_url">
+  <input type="submit" value="Analyze">
+</form>
+
+
+<p><a href="archive"> Archive </a></p>
