@@ -1,11 +1,28 @@
-<h1>PyUmlClass App</h1>
+<head>
+  <title>PyUML-Class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-<p> Insert the project link: </p>
+<body>
+<div class="jumbotron text-center">
+  <h1>PyUML - Class App</h1>
+  <p>Application to analyze the UML modeling of projects in GitHub</p>
+</div>
+
+<div class="container text-center">
+<p> Insert the project link and click Analyze</p>
 <form action="{% url 'pyumlclass:results' %}" method="post">
   {% csrf_token %}
-  <input type="text" name="project_url" id="project_url">
-  <input type="submit" value="Analyze">
+  <input class="form-control" type="text" name="project_url" id="project_url">
+  <br>
+  <input class="btn btn-default" type="submit" value="Analyze">
 </form>
 
 
 <p><a href="archive"> Archive </a></p>
+</div>
+</body>
