@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1> Results of analysed project </h1>
+<p>In this section you will see the results of your project</p>
+<br><br>
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover table-condensed">
+  <tr>
+    <th>Project name</th>
+    <th>UML Class</th>
+    <th>Python Class</th>
+    <th>Intersection</th>
+    <th>Without corrections</th>
+    <th>Hamming corrections</th>
+    <th>Capital letters corrections</th>
+  </tr>
+    <tr>
+      <th>{{ project.name_text }}</th>
+      <th>{{ project.uml_class }}</th>
+      <th>{{ project.python_class }}</th>
+      <th>{{ project.intersection }}</th>
+      <th>{{ project.without_corrections }}</th>
+      <th>{{ project.hamming_corrections }}</th>
+      <th>{{ project.capital_letters_corrections }}</th>
+    </tr>
+</table>
+</div>
+</div>
