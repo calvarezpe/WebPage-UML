@@ -5,6 +5,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  function CheckURL() {
+    var URL = document.getElementById("project_url").value;
+    if(URL.slice(0,18) != "https://github.com"){
+      alert('[ERROR] El campo debe ser https://github.com/user/project');
+      return false;
+    }
+    return true;
+  }
+  </script>
 </head>
 
 <body>
@@ -15,14 +25,14 @@
 
 <div class="container text-center">
 <p> Insert the project link and click Analyze</p>
-<form action="{% url 'pyumlclass:results' %}" method="post">
+<form action="{% url 'pyumlclass:results' %}" method="post" onsubmit="return CheckURL()">
   {% csrf_token %}
   <input class="form-control" type="text" name="project_url" id="project_url">
   <br>
-  <input class="btn btn-default" type="submit" value="Analyze">
+  <input class="btn btn-default" type="submit" value="Analyze" >
 </form>
 
 
-<p><a href="archive"> Archive </a></p>
+<p><a href="/archive/"> Archive </a></p>
 </div>
 </body>
